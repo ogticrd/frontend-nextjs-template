@@ -28,7 +28,6 @@ ARG DISABLE_ESLINT_PLUGIN
 ENV DISABLE_ESLINT_PLUGIN ${DISABLE_ESLINT_PLUGIN:-false}
 # App specific build time variables (not always needed)
 ARG DMS
-ENV DMS ${DMS:-https://beta.datos.gob.do}
 
 WORKDIR /app
 
