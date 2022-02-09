@@ -1,0 +1,8 @@
+module.exports = () => {
+  const dms = process.env.DMS;
+  return {
+    publicRuntimeConfig: {
+      DMS: dms && dms.replace(/\/?$/, ''),
+    },
+  };
+};
